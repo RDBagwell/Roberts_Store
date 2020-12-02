@@ -1,4 +1,4 @@
-import Homepage from "./component/Homepage/Homepage";
+import Homepage from "./component/pages/Homepage/Homepage";
 
 function App() {
   return (
