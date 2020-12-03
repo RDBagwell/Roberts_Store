@@ -1,5 +1,5 @@
 import React from 'react';
-import Directory from './Directory/Directory';
+import Directory from '../Directory/Directory';
 import './homepage.scss';
 
 const HomePage = ()=>{
