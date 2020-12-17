@@ -33,7 +33,7 @@ class Directory extends Component {
                     linkUrl: 'shop/womens'
                   },
                   {
-                    title: 'MWens',
+                    title: 'Mens',
                     imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
                     size: 'large',
                     id: 5,
