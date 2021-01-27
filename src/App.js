@@ -8,8 +8,11 @@ import Contact from "./component/pages/Contact/Contact";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import {Route, Switch, Redirect } from "react-router-dom";
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import { setCurrentUser } from './redux/user/user.actions';
+
+import { selectCurrentUser } from './redux/user/user.selector';
 
 
 import './App.css';
@@ -57,8 +60,8 @@ class App extends Component {
 
 }
 
-const mapStateToProps = ({user})=>({
-  currentUser: user.currentUser 
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser
 });
 
 const mapDispatchToProps = dispatch =>({
