@@ -1,19 +1,7 @@
-import React, {Component} from 'react';
-import PreviewCollection from '../PreviewCollection/PreviewCollection'
+import React from 'react';
+import PreviewCollection from '../PreviewCollection/PreviewCollection';
 
-
-import SHOP_DATA from '../../../data/shop.data.js';
-
-
-class ShopPage extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            collections: SHOP_DATA
-        }
-    }
-
-    render(){
+const ShopPage = ({collections})=>{
         const {collections} = this.state;
         return (
             <div className='shop-page'>
